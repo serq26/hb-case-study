@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/styles.scss'
+import Header from './components/Header'
+import AddProductForm from "./pages/AddProductForm"
+import ProductsList from "./pages/ProductsList"
+import { useActivePage } from './contexts/useActivePage'
 
 function App() {
+  const { activePage } = useActivePage();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      {activePage === "products-list" && <ProductsList />}
+      {activePage === "add-product" && <AddProductForm />}
     </div>
   );
 }

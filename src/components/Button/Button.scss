@@ -1,0 +1,67 @@
+// Button
+@import "../../styles/colors";
+.custom-button {
+    -webkit-box-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    outline: none;
+    padding: 8px;
+    margin: 10px 8px;
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    height: 40px;
+    min-width: 160px;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .custom-button:disabled {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+  
+  .custom-button-primary {
+    background-color: $primary-color;
+    color: $second-text-color;
+    &:hover {
+      background-color: $button-hover-color;
+    }
+  }
+  .custom-button-secondary {
+    background-color: $secondary-color;
+    color: $second-text-color;
+    &:hover {
+      background-color: $dark-color;
+    }
+  }
+  .custom-button-dark {
+    background-color: $dark-color;
+    color: $second-text-color;
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+  .custom-button-outline {
+    background-color: transparent;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    &:hover {
+      background-color: $button-hover-color;
+      color: $second-text-color;
+    }
+  }
+  
+  .active-button {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $second-text-color;
+  }
