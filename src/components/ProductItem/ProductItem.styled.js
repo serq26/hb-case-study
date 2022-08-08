@@ -4,6 +4,7 @@ export const ProductListItem = styled.div`
   width: 100%;
   border-radius: 10px;
   box-shadow: 2px 2px 10px #bbb;
+  -webkit-box-shadow: 2px 2px 10px #bbb;
   font-weight: 600;
   font-size: 17px;
   display: flex;
