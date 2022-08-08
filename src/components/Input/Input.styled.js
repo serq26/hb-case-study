@@ -21,7 +21,9 @@ export const Input = styled.input`
   outline: none;
   border-radius: 10px;
   box-shadow: 2px 2px 10px #ddd;
+  -webkit-appearance: none;
   -webkit-box-shadow: 2px 2px 10px #ddd;
+  -moz-box-shadow: 2px 2px 10px #ddd;
   padding-left: 20px;
   font-weight: 500;
   font-size: 17px;

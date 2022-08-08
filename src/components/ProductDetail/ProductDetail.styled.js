@@ -72,7 +72,9 @@ export const Textarea = styled.textarea`
   outline: none;
   border-radius: 10px;
   box-shadow: 2px 2px 10px #bbb;
+  -webkit-appearance: none;
   -webkit-box-shadow: 2px 2px 10px #bbb;
+  -moz-box-shadow: 2px 2px 10px #bbb;
   padding-left: 20px;
   font-weight: 500;
   font-size: 17px;
