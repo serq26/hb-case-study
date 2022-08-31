@@ -13,18 +13,24 @@ export const Header = styled.div`
 `;
 
 export const Logo = styled.div`
-  svg {
+  a{
+    text-decoration: none;
+  }
+  h1 {
     display: block;
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
+    font-weight: 400;
+    color: #717171;
+    font-size: 20px;
     border: none;
     overflow: hidden;
   }
   @media (max-width: 768px) {
     width: 40%;
-    svg {
+    h1 {
       max-width: 70%;
     }
   }
